@@ -16,13 +16,62 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Assignment 1"),
+            title: Text("Assignment 5"),
             centerTitle: true,
           ),
           body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Text("Setup your environment for coding.",style: TextStyle(fontSize: 30),),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.yellow,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.green,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.blue,
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.yellow,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.yellow,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 100,
+                ),
+                TextButton(
+                  style: ButtonStyle(
+                    foregroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blue),
+                  ),
+                  onPressed: () {},
+                  child: Text('TextButton',style: TextStyle(fontSize: 50),),
+                )
+              ],
             ),
           ),
         ),
